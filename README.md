@@ -297,7 +297,16 @@ Available options and their defaults
 'noappendfsynconrewrite' => 'no',
 'aofrewritepercentage'   => '100',
 'aofrewriteminsize'      => '64mb',
-'includes'               => nil
+'includes'               => nil,
+'hashmaxziplistentries'  => '512',
+'hashmaxziplistvalue'    => '64',
+'hashmaxzipmapentries'   => '512',
+'hashmaxzipmapvalue'     => '64',
+'listmaxziplistentries'  => '512',
+'listmaxziplistvalue'    => '64',
+'setmaxintsetentries'    => '512',
+'zsetmaxziplistentries'  => '128',
+'zsetmaxziplistvalue'    => '64'
 ```
 
 * `redisio['servers']` - An array where each item is a set of key value pairs for redis instance specific settings.  The only required option is 'port'.  These settings will override the options in 'default_settings', if it is left empty it will default to [{'port' => '6379'}]

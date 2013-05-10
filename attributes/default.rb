@@ -79,7 +79,16 @@ default['redisio']['default_settings'] = {
   'noappendfsynconrewrite' => 'no',
   'aofrewritepercentage'   => '100',
   'aofrewriteminsize'      => '64mb',
-  'includes'               => nil
+  'includes'               => nil,
+  'hashmaxziplistentries'  => '512',
+  'hashmaxziplistvalue'    => '64',
+  'hashmaxzipmapentries'   => '512',
+  'hashmaxzipmapvalue'     => '64',
+  'listmaxziplistentries'  => '512',
+  'listmaxziplistvalue'    => '64',
+  'setmaxintsetentries'    => '512',
+  'zsetmaxziplistentries'  => '128',
+  'zsetmaxziplistvalue'    => '64'
 }
 
 # The default for this is set inside of the "install" recipe. This is due to the way deep merge handles arrays

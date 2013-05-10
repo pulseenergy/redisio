@@ -201,7 +201,16 @@ def configure
           :noappendfsynconrewrite => current['noappendfsynconrewrite'],
           :aofrewritepercentage   => current['aofrewritepercentage'] ,
           :aofrewriteminsize      => current['aofrewriteminsize'],
-          :includes               => current['includes']
+          :includes               => current['includes'],
+          :hashmaxziplistentries  => current['hashmaxziplistentries'],
+          :hashmaxziplistvalue    => current['hashmaxziplistvalue'],
+          :hashmaxzipmapentries   => current['hashmaxzipmapentries'],
+          :hashmaxzipmapvalue     => current['hashmaxzipmapvalue'],
+          :listmaxziplistentries  => current['listmaxziplistentries'],
+          :listmaxziplistvalue    => current['listmaxziplistvalue'],
+          :setmaxintsetentries    => current['setmaxintsetentries'],
+          :zsetmaxziplistentries  => current['zsetmaxziplistentries'],
+          :zsetmaxziplistvalue    => current['zsetmaxziplistvalue']
         })
       end
       #Setup init.d file
